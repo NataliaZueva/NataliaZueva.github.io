@@ -1,0 +1,140 @@
+.overlay{
+	position: fixed;
+	top: 0; 
+    left: 0;
+	z-index: 999;
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.9);
+}
+
+.overlay img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+#for_countc{
+  position: absolute;
+  bottom: calc(100% - 68px);
+  right: calc(100% - 135px);
+  width: 100px;
+}
+
+#score{
+  position: absolute;
+  bottom: calc(100% - 69px);
+  right: calc(100% - 120px);
+  width: 8px;
+  padding: 12px;
+  font-size: 20px;
+  color: black;
+}
+
+#for_life{
+  position: absolute;
+  bottom: calc(100% - 70px);
+  left: calc(100% - 90px);
+  width: 70px;
+}
+
+#life{
+  position: absolute;
+  bottom: calc(100% - 70px);
+  left: calc(100% - 57px);
+  width: 8px;
+  padding: 12px;
+  font-size: 20px;
+  color: black;
+}
+
+#end{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 15px 25px;
+  transform: translate(-50%, -50%);
+  color: red;
+  background-color: rgba(240, 248, 255);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#restart{
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  z-index: 1;
+  width: 120px;
+  padding: 0 30px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+#truba{
+  position: fixed;
+  left: 50%;
+  top: -150px;
+  z-index: 1;
+  width: 250px;
+  padding: 0 30px;
+  transform: translateX(-50%);
+}
+
+#background{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+} /* цвет под плашкой под игра окончена*/
+
+#for_time{
+	position: fixed;
+	left: 50%;
+	top: 100px;
+	transform: translateX(-50%);
+	width: 100px;
+	padding: 0 30px;
+}
+
+#time{  
+	position: fixed;
+	left: 50%;
+	top: 98px;
+	transform: translateX(-50%);
+	width: 8px;
+	padding: 12px;
+	font-size: 17px;
+	color: black;
+}
+
+
+#info{
+	position: fixed;
+	bottom: 20px;
+	right: calc(100% - 150px);
+	z-index: 1;
+	transform: translateX(-50%);
+	width: 40px;
+	padding: 0 30px;
+	cursor: pointer;
+}
+
+#myGif{
+  position: fixed;       
+  left: 50%;             
+  transform: translateX(-50%) rotate(180deg); 
+  z-index: 1000;        
+}
